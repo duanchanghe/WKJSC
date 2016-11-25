@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  商城模板
+//
+//  Created by jundanuantong on 16/11/8.
+//  Copyright © 2016年 jundanuantong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Macros.h"
+#import "TabBarMacros.h"
+#import "UIView+Category.h"
+#import "UIViewController+Request.h"
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import "UIKit+AFNetworking.h"
+#import "POP.h"
+#import <UMSocialCore/UMSocialCore.h>
+#import "MyButton.h"
+#import "JDGoodsDetailController.h"
+#import "NSObject+Model.h"
+#import "MJExtension.h"
+#import <Masonry.h>
+#import <SDCycleScrollView.h>
+
+#endif /* PrefixHeader_pch */

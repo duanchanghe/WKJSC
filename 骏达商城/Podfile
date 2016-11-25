@@ -1,0 +1,22 @@
+project '商城模板.xcodeproj'
+
+platform :ios, '8.0'
+
+target '商城模板' do
+pod 'RBStoryboardLink'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'MJExtension'
+
+pod 'Masonry'
+pod 'SDCycleScrollView'
+pod 'SDWebImage'
+
+pod 'pop', :git => 'https://github.com/facebook/pop.git'
+
+pod 'UMengUShare/UI'
+pod 'UMengUShare/Social/Sina'
+pod 'UMengUShare/Social/WeChat'
+pod 'UMengUShare/Social/QQ'
+
+end

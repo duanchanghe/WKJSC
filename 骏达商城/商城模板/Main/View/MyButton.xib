@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MyButton" id="iN0-l3-epB" customClass="MyButton">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjO-Sc-Jzt">
+                    <rect key="frame" x="0.0" y="79" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lNt-Qd-gRI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" restorationIdentifier="UIControl" translatesAutoresizingMaskIntoConstraints="NO" id="qA7-be-401" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q2f-5A-d3G">
+                    <rect key="frame" x="11" y="0.0" width="79" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="q2f-5A-d3G" secondAttribute="height" multiplier="1:1" id="Eew-7K-ces"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qA7-be-401" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0A5-Ya-hrv"/>
+                <constraint firstAttribute="trailing" secondItem="xjO-Sc-Jzt" secondAttribute="trailing" id="4o9-xG-IGL"/>
+                <constraint firstAttribute="bottom" secondItem="qA7-be-401" secondAttribute="bottom" id="Sq5-jr-XeM"/>
+                <constraint firstItem="q2f-5A-d3G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WOo-bX-MEa"/>
+                <constraint firstItem="xjO-Sc-Jzt" firstAttribute="top" secondItem="q2f-5A-d3G" secondAttribute="bottom" id="ZRZ-QB-2nT"/>
+                <constraint firstItem="qA7-be-401" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZW5-eE-0dg"/>
+                <constraint firstItem="q2f-5A-d3G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eJV-yy-hcS"/>
+                <constraint firstAttribute="trailing" secondItem="qA7-be-401" secondAttribute="trailing" id="jdj-Z9-DTm"/>
+                <constraint firstItem="xjO-Sc-Jzt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mMP-nc-AEM"/>
+                <constraint firstAttribute="bottom" secondItem="xjO-Sc-Jzt" secondAttribute="bottom" id="zo8-Vm-uLa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionControl" destination="qA7-be-401" id="TH2-qg-DDd"/>
+                <outlet property="phoneView" destination="q2f-5A-d3G" id="b1F-jd-77S"/>
+                <outlet property="textLabel" destination="xjO-Sc-Jzt" id="XOK-1h-TmS"/>
+            </connections>
+            <point key="canvasLocation" x="-40" y="-198"/>
+        </view>
+    </objects>
+</document>
